@@ -22,5 +22,13 @@ document.getElementById('B1').addEventListener('click', function() {
     });
   });
 
+  document.getElementById('B2').addEventListener('click', function() {
+    // Envia un evento personalizado a Google Analytics 4
+    gtag('event', 'Click en FreshBites', {
+      'event_category': 'Interacción',
+      'event_label': 'B FreshBites'
+    });
+  });
+
 shareButtons.forEach(shareButton => 
     shareButton.addEventListener('click', copyText))
