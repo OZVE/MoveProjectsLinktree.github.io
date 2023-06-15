@@ -30,5 +30,30 @@ document.getElementById('B1').addEventListener('click', function() {
     });
   });
 
+  document.getElementById('B3').addEventListener('click', function() {
+    // Envia un evento personalizado a Google Analytics 4
+    gtag('event', 'Click en Aixa Lingerie', {
+      'event_category': 'Interacción',
+      'event_label': 'B Aixa Lingerie'
+    });
+  });
+
+  document.getElementById('B4').addEventListener('click', function() {
+    // Envia un evento personalizado a Google Analytics 4
+    gtag('event', 'Click en Teje que Teje', {
+      'event_category': 'Interacción',
+      'event_label': 'B Teje que Teje'
+    });
+  });
+  
+  document.getElementById('B5').addEventListener('click', function() {
+    // Envia un evento personalizado a Google Analytics 4
+    gtag('event', 'Click en Cucina NG', {
+      'event_category': 'Interacción',
+      'event_label': 'B Cucina NG'
+    });
+  });
+
+
 shareButtons.forEach(shareButton => 
     shareButton.addEventListener('click', copyText))
