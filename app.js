@@ -14,5 +14,13 @@ async function copyText(e){
     }
 }
 
+document.getElementById('B1').addEventListener('click', function() {
+    // Envia un evento personalizado a Google Analytics 4
+    gtag('event', 'Click en MethodOz', {
+      'event_category': 'Interacción',
+      'event_label': 'B MethodOz'
+    });
+  });
+
 shareButtons.forEach(shareButton => 
     shareButton.addEventListener('click', copyText))
